@@ -14,7 +14,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @EqualsAndHashCode()
 @Embeddable
-public class Adresse {
+public class Adresse implements Serializable{
     @Column(name = "adresse1")
     private String adresse1;
 
@@ -29,5 +29,4 @@ public class Adresse {
 
     @Column(name = "pays")
     private String pays;
-
 }
