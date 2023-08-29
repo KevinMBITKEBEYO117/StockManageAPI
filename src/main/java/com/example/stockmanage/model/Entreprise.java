@@ -4,16 +4,19 @@ package com.example.stockmanage.model;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@EqualsAndHashCode(callSuper = true)
 @Entity
 @Table(name = "entreprise")
-public class Entreprise extends AbstractEntity{
+public class Entreprise extends AbstractEntity {
     @Column(name = "nom")
     private String nom;
 
@@ -41,3 +44,4 @@ public class Entreprise extends AbstractEntity{
     @OneToMany(mappedBy = "entreprise")
     private List<Utilisateur> utilisateurs;
 }
+

@@ -3,6 +3,7 @@ package com.example.stockmanage.model;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
@@ -11,9 +12,10 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@EqualsAndHashCode(callSuper = true)
 @Entity
 @Table(name = "article")
-public class Article {
+public class Article extends AbstractEntity{
     @Column(name = "codearticle")
     private String codeArticle;
 

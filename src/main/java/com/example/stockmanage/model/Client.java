@@ -10,10 +10,10 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode()
+@EqualsAndHashCode(callSuper = true)
 @Entity
 @Table(name = "client")
-public class Client {
+public class Client extends AbstractEntity{
 
     @Column(name = "nom")
     private String nom;

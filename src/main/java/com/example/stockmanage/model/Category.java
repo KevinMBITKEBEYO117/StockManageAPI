@@ -14,10 +14,10 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode()
+@EqualsAndHashCode(callSuper = true)
 @Entity
 @Table(name = "category")
-public class Category {
+public class Category extends AbstractEntity{
     @Column(name = "code")
     private String code;
 
