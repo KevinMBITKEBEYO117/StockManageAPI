@@ -6,10 +6,11 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.*;
 
+import java.time.Instant;
 import java.util.List;
 
 @Data
-@Builder
+ @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
@@ -27,4 +28,6 @@ public class Category extends AbstractEntity{
 
     @OneToMany(mappedBy = "category")
     private List<Article> articles;
+
+
 }
