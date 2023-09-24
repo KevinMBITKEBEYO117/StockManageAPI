@@ -2,7 +2,7 @@ package com.example.stockmanage.exception;
 
 public enum ErrorCodes {
 
-    RTICLE_NOT_FOUND(1000),
+    ARTICLE_NOT_FOUND(1000),
     ARTICLE_NOT_VALID(1001),
     ARTICLE_ALREADY_IN_USE(1002),
 

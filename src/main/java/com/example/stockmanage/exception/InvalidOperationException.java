@@ -1,4 +1,4 @@
-package com.example.stockmanage.handlers;
+package com.example.stockmanage.exception;
 
 import com.example.stockmanage.exception.ErrorCodes;
 import lombok.Getter;
